@@ -34,4 +34,12 @@ test('User fetched name should be Leanne Graham  with asyc await process'  , asy
   const data=await functions.fetchUser();
      expect(data.name).toEqual('Leanne Graham');
    
+});
+
+
+
+// reverseString
+
+test(' checking reverse string',() => {
+    expect
 })
