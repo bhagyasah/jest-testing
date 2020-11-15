@@ -47,8 +47,28 @@ test(' checking reverse string',() => {
 
 // jest with life cycyle method
 
-const initialize= () => console.log('initialize the databse..');
-const closed= () => console.log('closed database..')
+// const initialize= () => console.log('initialize the databse..');
+// const closed= () => console.log('closed database..')
 
-beforeAll(() => initialize());
-afterAll(() => closed());
+// beforeAll(() => initialize());
+// afterAll(() => closed());
+
+const namecheck= () => console.log("checking name .....")
+
+describe('names check', () =>{
+     beforeEach(() => namecheck());
+
+     test('user is ranjit', () => {
+        const user='ranjit'
+       expect(user).toBe('ranjit')
+    });
+
+
+    test('user is bhagya', () => {
+        const user='bhagya'
+       expect(user).toBe('bhagya')
+    });
+   } 
+
+
+)
