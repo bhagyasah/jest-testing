@@ -43,3 +43,12 @@ test('User fetched name should be Leanne Graham  with asyc await process'  , asy
 test(' checking reverse string',() => {
     expect
 })
+
+
+// jest with life cycyle method
+
+const initialize= () => console.log('initialize the databse..');
+const closed= () => console.log('closed database..')
+
+beforeEach(() => initialize());
+afterEach(() => closed());
