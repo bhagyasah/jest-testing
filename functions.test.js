@@ -50,5 +50,5 @@ test(' checking reverse string',() => {
 const initialize= () => console.log('initialize the databse..');
 const closed= () => console.log('closed database..')
 
-beforeEach(() => initialize());
-afterEach(() => closed());
+beforeAll(() => initialize());
+afterAll(() => closed());
